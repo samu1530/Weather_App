@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather App"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textFontWeight="500"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/City_name"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="#00BCD4"
+        android:hint="Enter your City"
+        android:textColorHint="#ffffff"
+        android:textColor="@color/white"
+        android:textSize="36dp"
+        android:textAlignment="center"
+
+        tools:ignore="HardcodedText,SpUsage" />
+
+
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_below="@id/City_name"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Weather in your City"
+        android:textSize="30sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="20sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginTop="100dp"
+        android:textFontWeight="250"
+        android:textStyle="bold"
+        android:background="#4F97C9"
+        android:textColor="#2B2D30"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="10sp"
+        android:background="#FF5722"
+        android:backgroundTint="#009688"
+        android:gravity="center"
+        android:text="Search"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
